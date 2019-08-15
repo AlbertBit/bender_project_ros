@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="deformation_input_computation" pkg="deformation_control" type="deformation_input_computation" output="screen">
+  </node>
+
+</launch>

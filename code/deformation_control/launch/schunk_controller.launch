@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="schunk_controller" pkg="deformation_control" type="schunk_controller" output="screen">
+  </node>
+
+</launch>

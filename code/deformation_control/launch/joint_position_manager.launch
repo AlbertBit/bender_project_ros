@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="joint_position_manager" pkg="deformation_control" type="joint_position_manager" output="screen">
+    <remap from="left_position" to="kuka_left/joint_impedance_controller/command"/>
+    <remap from="right_position" to="kuka_right/joint_impedance_controller/command"/>
+    <remap from="left_joint_states" to="kuka_left/joint_states_msr"/>
+    <remap from="right_joint_states" to="kuka_right/joint_states_msr"/>
+  </node>
+
+</launch>

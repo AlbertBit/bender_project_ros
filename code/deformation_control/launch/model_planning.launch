@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find kuka_lwr4p_runtime)/launch/arms.launch"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find kuka_additional_description)/urdf/kuka_bibras_norighteffector.urdf.xacro'" />
+  <include file="$(find dualarm_moveit)/launch/move_group.launch"/>
+
+
+</launch>

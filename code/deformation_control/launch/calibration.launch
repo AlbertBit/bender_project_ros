@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="calibration" pkg="deformation_control" type="calibration" output="screen">
+    <remap from="left_joint_states" to="kuka_left/joint_states_msr"/>
+    <remap from="right_joint_states" to="kuka_right/joint_states_msr"/>
+  </node>
+
+</launch>
